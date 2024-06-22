@@ -1,10 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={{
+        color:'black',
+        fontStyle:'italic'
+      }}>Nurfadilah Rahman</Text>
+      <Text style={{
+        fontSize:30,
+        fontStyle:'italic',
+        textDecorationLine:'underline',
+        textShadowColor:'black',
+        color:'green'
+      }}>Informatika Unismuh</Text>
+      <Text style={{
+        fontSize:50,
+        fontStyle:'bold',
+        color:'blue'
+      }}></Text>
       <StatusBar style="auto" />
     </View>
   );
