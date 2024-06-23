@@ -1,35 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
 
-export default function App() {
+const App = () =>  {
   return (
-    <View style={styles.container}>
-      <Text style={{
-        color:'black',
-        fontStyle:'italic'
-      }}>Nurfadilah Rahman</Text>
-      <Text style={{
-        fontSize:30,
-        fontStyle:'italic',
-        textDecorationLine:'underline',
-        textShadowColor:'black',
-        color:'green'
-      }}>Informatika Unismuh</Text>
-      <Text style={{
-        fontSize:50,
-        fontStyle:'bold',
-        color:'blue'
-      }}>2021</Text>
-      <StatusBar style="auto" />
+    <View style={{flex:1}}>
+      <View style={{ flex: 1, flexDirection: 'column'}}>
+       <View style={{ flex: 1, backgroundColor: 'red'}}></View>
+       <View style={{ flex: 1, backgroundColor: 'white'}}></View>
     </View>
-  );
+    
+    <View style={{ flex: 1, flexDirection: 'row'}}>
+      <View style={{ flex: 1, backgroundColor: 'green' }}></View>
+      <View style={{ flex: 1, backgroundColor: 'blue' }}></View>
+    </View>
+  </View>
+    
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
