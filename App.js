@@ -19,7 +19,7 @@ export default function App() {
         fontSize:50,
         fontStyle:'bold',
         color:'blue'
-      }}></Text>
+      }}>2021</Text>
       <StatusBar style="auto" />
     </View>
   );
