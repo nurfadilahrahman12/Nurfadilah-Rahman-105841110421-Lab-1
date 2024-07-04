@@ -1,35 +1,13 @@
-import { Text, View, Image, TextInput } from 'react-native';
 import React from 'react';
+import { View } from 'react-native';
+import SignUp from './component/pages/Signup'; 
 
 const App = () => {
-  const Inputan = ({ nama, color })=>{
-    return(
-      <TextInput 
-      placeholder={`Masukkan ${nama}`}
-      style={{
-        borderWidth:1,
-        borderColor: 'black',
-        borderRadius: 10,
-        width: 300,
-        height: 50,
-        marginVertical: 10,
-        padding: 10,
-        backgroundColor: 'beige',
-        color: color,
-      }}/>
-    )
-  }
   return (
-    <View style = {{
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}>
-      <Inputan nama = "email" color = "white"/>
-      <Inputan nama = "username" color = "white"/>
-      <Inputan nama = "password" color = "black"/>
+    <View style={{ flex: 1, backgroundColor: '#EEEEEE' }}>
+      <SignUp />
     </View>
-  )  
-}
+  );
+};
 
-export default App
+export default App;
