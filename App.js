@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import Login from './component/pages/login'; 
+import ForgotPassword from './component/pages/forgotPassword'; 
 
 const App = () => {
   return (
     <View style={{ flex: 1, backgroundColor: '#EEEEEE' }}>
-      <Login/>
+      <ForgotPassword/>
     </View>
   );
 };

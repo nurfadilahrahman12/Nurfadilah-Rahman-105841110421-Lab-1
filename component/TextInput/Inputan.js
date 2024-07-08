@@ -8,7 +8,7 @@ const Inputan = ({ name, color})=> {
         placeholderTextColor={'rgba(0, 0, 0, 0.5)'}
         style={{
             borderWidth: 1,
-            borderColor: 'transparent',
+            borderColor: 'red',
             borderRadius: 5,
             width: 330,
             height: 65,
@@ -18,7 +18,7 @@ const Inputan = ({ name, color})=> {
             color: color,
             fontSize: 16,
             textAlign: 'left',
-            top: 60
+            top: 10
         }}
         secureTextEntry= {name === 'Password'}
         />
