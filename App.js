@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import SignUp from './component/pages/Signup'; 
+import SignUp from './component/pages/login'; 
 
 const App = () => {
   return (
     <View style={{ flex: 1, backgroundColor: '#EEEEEE' }}>
-      <SignUp />
+      <SignUp/>
     </View>
   );
 };
