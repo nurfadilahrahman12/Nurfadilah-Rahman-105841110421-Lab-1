@@ -8,9 +8,9 @@ const Inputan = ({ name, color})=> {
         placeholderTextColor={'rgba(0, 0, 0, 0.5)'}
         style={{
             borderWidth: 1,
-            borderColor: 'red',
+            borderColor: 'transparent',
             borderRadius: 5,
-            width: 330,
+            width: 315,
             height: 65,
             marginVertical: 8,
             paddingHorizontal: 8,

@@ -1,8 +1,9 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "cSpell.words": [
     "anda",
     "Biasa",
+    "Buttom",
     "coba",
     "Costum",
     "dapat",
@@ -13,6 +14,7 @@
     "Masukkan",
     "Scrool",
     "silahkan",
-    "tidak"
+    "tidak",
+    "Weidght"
   ]
 }

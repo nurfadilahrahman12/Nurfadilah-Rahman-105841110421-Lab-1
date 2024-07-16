@@ -4,7 +4,7 @@ import ButtonComponent from '../button/button';
 import Inputan from '../TextInput/Inputan';
 
 
-const ForgotPassword = () => {
+const ForgotPassword = ({navigation}) => {
     return (
         <View style={{
             flex: 1,
@@ -17,10 +17,7 @@ const ForgotPassword = () => {
             top: 60,
             left: 20
         }}>
-            <Image
-            source={require('../../assets/back.png')}
-            style={{ width: 30, height:30}}
-            />
+    
         </TouchableOpacity>
         <View style={{
             marginBottom: 100,

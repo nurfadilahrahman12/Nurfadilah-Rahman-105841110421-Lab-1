@@ -3,15 +3,15 @@ import React from 'react';
 import ButtonComponent from '../button/button';
 import Inputan from '../TextInput/Inputan';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   return (
-    <View style={{ flex: 1, backgroundColor: '#F5F5F5'}}>
+    <View style={{ flex: 1, backgroundColor: '#EEEEEE'}}>
     <View style={{ 
       flex: 1,
       justifyContent: 'flex-start',
       alignItems: 'flex-start',
-      marginLeft: 15,
-      marginTop: 90
+      marginLeft: 25,
+      marginTop: 80
     }}>
       <Text style={{ 
         fontWeight: 'bold', 
@@ -25,9 +25,9 @@ const SignUp = () => {
       alignItems: 'center',
       marginBottom: 100
     }}>
-      <Inputan nama= "Email" color="black"/>
-      <Inputan nama= "Username" color="black"/>
-      <Inputan nama= "Password" color="black"/>
+      <Inputan name= "Email" color="black"/>
+      <Inputan name= "Username" color="black"/>
+      <Inputan name= "Password" color="black"/>
 
       <Text style={{
         fontSize: 14,
@@ -35,20 +35,20 @@ const SignUp = () => {
         marginBottom: 30,
         textAlign: 'right',
         marginLeft: 175
-      }}>Already have an account?</Text>
+      }}onPress={()=> navigation.navigate('Login')}>Already have an account?</Text>
       <ButtonComponent title="Sign Up" color="red"/>
     </View>
 
     <View style={{ 
       flex: 1, 
-      justifyContent: 'flex-start', 
+      justifyContent: 'center', 
       alignItems: 'center'
       }}>
       <Text style={{
         fontSize: 14,
         color: 'black',
         textAlign: 'center',
-        marginBottom: 20,
+        marginBottom: 10,
         justifyContent: 'space-evenly',
       }}>Or sign up with social account</Text>
       
@@ -63,26 +63,26 @@ const SignUp = () => {
         backgroundColor: 'white', 
         justifyContent: 'center', 
         alignItems: 'center',
-        borderRadius: 10,
-        width: 120,
+        borderRadius: 5,
+        width: 90,
         height: 80,
         marginRight: 15
       }}>
         <Image source={require('../../assets/google.png')}
-        style={{ width: 30, height: 30}}/>
+        style={{ width: 50, height: 50}}/>
       </View>
       <View style={{
         flex: 1,
         backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 10,
-        width: 120,
+        borderRadius: 5,
+        width: 90,
         height: 80,
         marginRight: 15
       }}>
         <Image source={require('../../assets/facebook.png')}
-        style={{width: 30, height: 30}}/>
+        style={{width: 50, height: 50}}/>
       </View>
       </View>
     </View>

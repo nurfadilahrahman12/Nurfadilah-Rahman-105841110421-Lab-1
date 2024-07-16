@@ -3,7 +3,7 @@ import React from 'react';
 import ButtonComponent from '../button/button';
 import Inputan from '../TextInput/Inputan';
 
-const Login = ()=> {
+const Login = ({navigation})=> {
     return (
         <View style = {{
             flex: 1,
@@ -16,9 +16,7 @@ const Login = ()=> {
                 top: 60,
                 left: 20,
         }}>
-        <Image 
-            source={require('../../assets/back.png')}
-            style={{ width: 30, height: 30}}/>
+       
         </TouchableOpacity>
             <View style = {{
                 marginBottom: 60, 
@@ -27,7 +25,7 @@ const Login = ()=> {
             <Text style={{
                 fontWeight: 'bold',
                 fontSize: 50,
-                top: 65
+                top: 10
         }}>Login</Text>
             <View style={{
                 marginBottom: 10,
@@ -43,8 +41,7 @@ const Login = ()=> {
                 marginTop: 5,
                 marginBottom: 50,
                 textAlign: 'right',
-                top: 60
-            }}>Forgot your password?
+            }}onPress={()=> navigation.navigate('ForgotPassword')}>Forgot your password?
             </Text>
         </TouchableOpacity>
         </View>
@@ -53,7 +50,7 @@ const Login = ()=> {
                 fontSize:14,
                 color: 'black',
                 textAlign: 'center',
-                marginTop: 90,
+                marginTop: 50,
                 marginBottom: 20
         }}>Or login with social account
             </Text>
