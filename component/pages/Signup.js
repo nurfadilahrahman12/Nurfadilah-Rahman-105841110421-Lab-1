@@ -36,7 +36,7 @@ const SignUp = ({navigation}) => {
         textAlign: 'right',
         marginLeft: 175
       }}onPress={()=> navigation.navigate('Login')}>Already have an account?</Text>
-      <ButtonComponent title="Sign Up" color="red"/>
+      <ButtonComponent title="Sign Up" color="red" onPress={()=> navigation.navigate('Login')}/>
     </View>
 
     <View style={{ 
