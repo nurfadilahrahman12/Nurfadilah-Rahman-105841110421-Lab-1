@@ -17,7 +17,7 @@ const Api = () => {
 
   const fetchData = () => {
     setLoading(true);
-    axios.get('https://jsonplaceholder.typicode.com/posts?_limit=${numPosts}')
+    axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=${numPosts}`)
       .then((response) => {
         setData(response.data);
         setLoading(false);
@@ -29,7 +29,7 @@ const Api = () => {
   };
 
   const getPostById = () => {
-    axios.get('https://jsonplaceholder.typicode.com/posts/${postI}')
+    axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
       .then(response => setSinglePost(response.data))
       .catch(error => console.error(error));
   };
@@ -44,13 +44,13 @@ const Api = () => {
   };
 
   const deletePost = (id) => {
-    axios.delete('https://jsonplaceholder.typicode.com/posts/${id}')
+    axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then(() => setData(data.filter(post => post.id !== id)))
       .catch(error => console.error(error));
   };
 
   const updateExistingPost = () => {
-    axios.put('https://jsonplaceholder.typicode.com/posts/${updatePost.id}', updatePost)
+    axios.put(`https://jsonplaceholder.typicode.com/posts/${updatePost.id}`, updatePost)
       .then(response => {
         setData(data.map(post => (post.id === response.data.id ? response.data : post)));
         setUpdatePost({ id: '', title: '', body: '' });

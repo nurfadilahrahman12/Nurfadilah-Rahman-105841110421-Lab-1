@@ -55,7 +55,7 @@ const LoginSimak = () => {
           <Text style={styles.userDataText}>Role: {userData.role}</Text>
           <Image
             style={styles.userImage}
-            source={{ uri: 'https://simakad.unismuh.ac.id/upload/mahasiswa/${userData.username}.jpg' }}
+            source={{ uri: `https://simakad.unismuh.ac.id/upload/mahasiswa/${userData.username}.jpg` }}
           />
         </View>
       )}

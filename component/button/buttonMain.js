@@ -11,7 +11,7 @@ const ButtonComponent = ({ title, color, onPress }) => {
                 marginVertical: 10
             }}>
                 <Text style={{
-                    width: 350,
+                    width: 160,
                     height: 50,
                     color: 'white',
                     backgroundColor: color,
