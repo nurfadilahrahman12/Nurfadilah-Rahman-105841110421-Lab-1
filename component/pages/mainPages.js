@@ -43,14 +43,14 @@ function MainPage({ navigation }) {
     }
 
     return (
-        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-            <View style={{ flex: 1 }}>
+        <View style={styles.container}>
+            <ScrollView contentContainerStyle={styles.scrollViewContent}>
                 <ImageBackground source={bannerImage} style={[styles.image, { height: height * 0.7 }]}>
                     <View style={styles.overlay}>
                         <View style={styles.bottomLeft}>
                             <Text style={styles.fashionText}>Nike Shoes</Text>
                             <Text style={styles.saleText}>Sale</Text>
-                            <ButtonComponent title="Check" onPress={() => navigation.navigate('NextPage')} color="#FF0000" borderRadius={2} />
+                            <ButtonComponent title="Check" onPress={() => navigation.navigate('ShopPage')} color="#FF0000" borderRadius={2} />
                         </View>
                     </View>
                 </ImageBackground>
@@ -79,15 +79,22 @@ function MainPage({ navigation }) {
                         showsHorizontalScrollIndicator={false}
                     />
                 </View>
-                <View style={styles.navbarContainer}>
-                    <Navbar style={styles.navbar} />
-                </View>
+            </ScrollView>
+            <View style={styles.navbarContainer}>
+                <Navbar />
             </View>
-        </ScrollView>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
+    scrollViewContent: {
+        paddingBottom: 50,
+    },
     image: {
         justifyContent: 'center',
         width: '100%',
@@ -96,7 +103,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: 20,
+        padding: 10,
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
     },
     bottomLeft: {
@@ -174,6 +181,11 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
+        backgroundColor: '#fff',
+        borderTopWidth: 1,
+        borderTopColor: '#ddd',
+        paddingVertical: 0,
+        zIndex: 1, 
     },
 });
 

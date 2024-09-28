@@ -16,7 +16,6 @@ const Login = ({ navigation }) => {
                 top: 60,
                 left: 20,
             }}>
-                {/* Add content or remove if not needed */}
             </TouchableOpacity>
             <View style={{
                 marginBottom: 60,
@@ -33,14 +32,14 @@ const Login = ({ navigation }) => {
                 }}>
                     <Inputan name="Email" color="black" />
                     <Inputan name="Password" color="black" />
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Forgot Password')}>
                         <Text style={{
                             fontSize: 14,
                             color: 'black',
                             marginTop: 5,
                             marginBottom: 50,
                             textAlign: 'right',
-                        }} onPress={() => navigation.navigate('ForgotPassword')}>
+                        }}>
                             Forgot your password?
                         </Text>
                     </TouchableOpacity>
